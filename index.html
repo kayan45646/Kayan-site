@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kayan | Geliştirici & Oyun Tasarımcısı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      color: crimson;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #1c1c1c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      border-top: 1px solid crimson;
+      border-bottom: 1px solid crimson;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: crimson;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #00000044;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: crimson;
+      margin-bottom: 10px;
+    }
+
+    .projects .card {
+      border-left: 4px solid crimson;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9rem;
+      border-top: 1px solid crimson;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kayan</h1>
+    <p>Geliştirici • Oyun Tasarımcısı • Otomasyon Uzmanı</p>
+  </header>
+
+  <nav>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#projeler">Projeler</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <div class="container">
+    <section id="hakkimda" class="card">
+      <h2>Hakkımda</h2>
+      <p>Ben Kayan. Python, Godot ve otomasyon sistemleriyle ilgileniyorum. Hayalim, mobil ve masaüstü platformlar için bağımlılık yapan oyunlar geliştirmek ve teknolojiyi herkesin ulaşabileceği hâle getirmek.</p>
+    </section>
+
+    <section id="projeler" class="projects">
+      <div class="card">
+        <h2>📱 Cevizci Baba</h2>
+        <p>Python ile yapılmış, ceviz fiyat analiz ve grafik uygulaması. Gerçek zamanlı veri çekme ve rapor üretimi içerir.</p>
+      </div>
+      <div class="card">
+        <h2>🎮 Sapphire Steppe</h2>
+        <p>Godot 4 ile geliştirilen simülasyon ve strateji temalı mobil oyun projesi. Sıra tabanlı savaş sistemi içeriyor.</p>
+      </div>
+      <div class="card">
+        <h2>🤖 Discord Botu</h2>
+        <p>Anket ve oylama özellikli, Python ile yazılmış özelleştirilebilir Discord botu. Çok yakında açık kaynak!</p>
+      </div>
+    </section>
+
+    <section id="iletisim" class="card">
+      <h2>İletişim</h2>
+      <p>📧 kayan@example.com</p>
+      <p>🔗 <a href="https://github.com/" style="color:crimson;">GitHub Profilim</a></p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Kayan. Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
